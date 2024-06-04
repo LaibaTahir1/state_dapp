@@ -2,9 +2,9 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <div className='max-w-[1440px] mx-auto w-full text-white px-[25px] md:px-[73px]'>
+    <div className='max-w-[1440px] border mx-auto w-full text-white px-[25px] md:px-[73px]'>
       <div>
-      <div className='flex justify-between py-4'>
+      <div className='flex justify-between'>
        <div><img  className='py-3 md:pt-4' src='/assets/images/LogoImg.png' alt='' /></div>
         <div className='hidden md:flex gap-[30px]  font-Montserrat text-15 font-medium'>
           <p className='py-4'>Home</p>
