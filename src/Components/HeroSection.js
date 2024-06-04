@@ -9,7 +9,7 @@ function HeroSection() {
         minHeight:'101vh',
         marginTop:'-80px',
         backgroundRepeat:'no-repeat',
-        backgroundPosition:'center',
+        backgroundPosition:'center'
 
         
     }}>
