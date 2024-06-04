@@ -14,18 +14,22 @@ import ContactUs from './Components/ContactUs';
 
 function App() {
   return (
-    <div className='overflow-hidden'>  
+    <div className='overflow-hidden'>
       <Layout>
-      <HeroSection/>
-      <AboutSection />
-      <Services />
-      <Property/>
-      <StorySection />
-      <FindPlace/>
-      <LearnMore />
-      <TeamSection />
-      <BlogSection />
-       <ContactUs />
+        <HeroSection />
+       <div className='max-w-[1291px] mx-auto w-full'>
+       <AboutSection />
+        <Services />
+          <Property />
+       </div>
+          <StorySection />
+          <FindPlace />
+        <LearnMore />
+       <div className='max-w-[1291px] mx-auto w-full'>
+       <TeamSection />
+        <BlogSection />
+       </div>
+        <ContactUs />
 
       </Layout>
 
