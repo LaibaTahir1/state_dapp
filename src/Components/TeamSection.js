@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
 function TeamSection() {
+
+  const [ isHover, setIsHover ] = useState(1)
+
   return (
     <div className=" bg-grey-1500 pb-0 md:pb-[40px]  px-[16px] md:px-0  pt-[60px] md:pt-[100px]">
       <div className="flex justify-center">
@@ -16,14 +19,16 @@ function TeamSection() {
       </p>
       <div className="mt-[24px] md:mt-[144px] flex justify-center max-w-[1440px] mx-auto w-full">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-[23px]">
-        <div className=" bg-grey-1300  hover:bg-blue-400 hover:text-white">
+        <div onMouseEnter={()=>setIsHover(1)}
+        onMouseLeave={()=>setIsHover(null)}
+         className=" bg-grey-1300  hover:bg-blue-400 hover:text-white">
             <img src="/assets/images/Man1.png" alt="" />
             <div className="py-[23px] px-[21px]  rounded-b-[4px]">
               <p className=" text-23 font-semibold font-PlusJakartaSans">
                 Elena Gilberts
               </p>
               <div className="flex justify-between">
-                <p className=" text-18 font-normal font-PlusJakartaSans text-blue-400 ">
+                <p className={`text-18 font-normal font-PlusJakartaSans ${isHover === 1 ? 'text-white':'text-blue-400'}`}>
                   Land Seller
                 </p>
                 <div>

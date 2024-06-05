@@ -17,18 +17,18 @@ function App() {
     <div className='overflow-hidden'>
       <Layout>
         <HeroSection />
-       <div className='max-w-[1291px] mx-auto w-full'>
-       <AboutSection />
-        <Services />
+        <div className='max-w-[1291px] mx-auto w-full'>
+          <AboutSection />
+          <Services />
           <Property />
-       </div>
-          <StorySection />
-          <FindPlace />
+        </div>
+        <StorySection />
+        <FindPlace />
         <LearnMore />
-       <div className='max-w-[1291px] mx-auto w-full'>
-       <TeamSection />
-        <BlogSection />
-       </div>
+        <div className='max-w-[1291px] mx-auto w-full'>
+          <TeamSection />
+          <BlogSection />
+        </div>
         <ContactUs />
 
       </Layout>

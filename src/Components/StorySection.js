@@ -6,7 +6,7 @@ function StorySection() {
     style={{
         background:'url(/assets/images/blueBg.png)',
         backgroundRepeat:'no-repeat',
-        backgroundSize:'cover',
+        backgroundSize:'150%',
         backgroundPosition:'center',
         height:'800px',
     }} className='px-[16px] md:px-0 '>

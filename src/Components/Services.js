@@ -2,10 +2,10 @@ import React from 'react'
 
 function Services() {
   return (
-    <div className='mt-[67px] md:mt-[100px] max-w-[1226px]  px-[16px] md:px-0 mx-auto w-full'>
+    <div className='mt-[67px] md:mt-[100px]  px-[16px] md:px-0 mx-auto w-full'>
         <div>
         <div className=' block md:flex justify-between'>
-            <h2 className=' text-black-600  text-center md:text-start max-w-[416px] mx-auto font-semibold text-25 md:text-48  leading-[31px] md:leading-[58px] font-Montserrat'>Our Excellent Services</h2>
+            <h2 className=' text-black-600  text-center md:text-start max-w-[416px] mx-auto md:mx-0 font-semibold text-25 md:text-48  leading-[31px] md:leading-[58px] font-Montserrat'>Our Excellent Services</h2>
         <div>
             <p className='max-w-[365px] md:max-w-[758px] mt-[12px] md:mt-0 mx-auto text-center md:text-start text-black-200 text-14 md:text-19 font-Poppins leading-[22px] md:leading-7 font-medium'>Check out our best service you can possibly orders in building your company and don't forget to ask via our email or our customer service if you are interested in using our services</p>
             <div className='hidden md:flex  bg-blue-400 text-white px-[30px] mt-3.5 py-3 w-[175px] rounded-[4px]'>
