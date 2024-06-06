@@ -2,7 +2,7 @@ import React from 'react'
 
 function BlogSection() {
   return (
-    <div className='mt-[60px] md:mt-[40px] mb-[60px] md:mb-0 px-[17px] md:px-0 pb-0 md:pb-[100px]'>
+    <div className='mt-[60px] md:mt-[40px] mb-[60px] md:mb-0 px-[17px] md:px-0 pb-0 md:pb-[100px] '>
         <h2 className='text-black-1200  font-Montserrat font-semibold text-25 md:text-48  leading-[31px] md:leading-[58px] text-center'>OUR BLOG</h2>
         <div className='mt-[21px] md:mt-[51px] flex  justify-center'>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-[24px]'>

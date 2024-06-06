@@ -1,31 +1,58 @@
-import React from 'react';
+import React from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+// import required modules
+import { Navigation } from 'swiper/modules';
+import BackgroundSwipper from './BackgroundSwipper';
+const SLIDER=[
+    {
+        id:1,
+        heading:' Where Every Property Tells a Story of Homecoming!',
+        paragraph:' In oculis quidem se esse admonere interesse enim maxime placeat, facere possimus, omnis. Et quidem faciunt, utlabore et accurate disserendum et harum quidem exercitus quid.',
+    },
+    {
+        id:2,
+        heading:' Where Every Property Tells a Story of Homecoming!',
+        paragraph:' In oculis quidem se esse admonere interesse enim maxime placeat, facere possimus, omnis. Et quidem faciunt, utlabore et accurate disserendum et harum quidem exercitus quid.',
+    },
+    {
+        id:3,
+        heading:' Where Every Property Tells a Story of Homecoming!',
+        paragraph:' In oculis quidem se esse admonere interesse enim maxime placeat, facere possimus, omnis. Et quidem faciunt, utlabore et accurate disserendum et harum quidem exercitus quid.',
+    },
+    {
+      id:4,
+      heading:' Where Every Property Tells a Story of Homecoming!',
+      paragraph:' In oculis quidem se esse admonere interesse enim maxime placeat, facere possimus, omnis. Et quidem faciunt, utlabore et accurate disserendum et harum quidem exercitus quid.',
+  },
+  {
+    id:5,
+    heading:' Where Every Property Tells a Story of Homecoming!',
+    paragraph:' In oculis quidem se esse admonere interesse enim maxime placeat, facere possimus, omnis. Et quidem faciunt, utlabore et accurate disserendum et harum quidem exercitus quid.',
+},
+]
 
 function HeroSection() {
   return (
-    <div
-      className='text-white border flex flex-col justify-center'
-      style={{
-        background: 'url(/assets/images/bg_img.png)',
-        height: '800px',
-        backgroundSize: 'cover',
-        minHeight: '101vh',
-        marginTop: '-80px',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
-      }}>
-      <div className=' max-w-[1320px] mx-auto w-full '>
-        <h2 className=' max-w-[378px] md:max-w-[715px]  mx-auto lg:mx-0 font-semibold font-Montserrat text-center md:text-start   text-32 md:text-64 leading-[39px] md:leading-[78px] '>
-          Where Every Property Tells a Story of Homecoming!
-        </h2>
-        <p className='pt-[21px] md:pt-10 mx-auto lg:mx-0 max-w-[378px] md:max-w-[668px] md:leading-[18px] leading-7 text-center md:text-start   text-14 md:text-20 font-normal font-PlusJakartaSans'>
-          In oculis quidem se esse admonere interesse enim maxime placeat, facere possimus, omnis. Et quidem faciunt, ut
-          labore et accurate disserendum et harum quidem exercitus quid.
-        </p>
-      </div>
-    </div>
-      
-    
-  );
+    <Swiper navigation={true } slidesPerView={1}  spaceBetween={20}   modules={[Navigation]} className="mySwiper">
+
+        {SLIDER.map((item ,index) =>{
+          return(
+            <SwiperSlide  key={`${item.id}___${index}`}>
+        <BackgroundSwipper 
+            heading={item.heading}
+          paragraph={item.paragraph}
+          />
+          
+           </SwiperSlide>
+          )
+        })}
+      </Swiper>
+
+  )
 }
 
-export default HeroSection;
+export default HeroSection

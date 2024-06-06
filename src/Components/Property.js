@@ -56,26 +56,26 @@ function Property() {
             backgroundRepeat:'no-repeat',
             height: '800px',
           }}>
-          <div className='hidden md:flex h-full items-center pl-10'>
-            <div className='max-w-[25%] w-full text-center p-3'>
-              <img src='/assets/images/searchIcon.png' alt='' className='mx-auto' />
-              <h2 className='text-black-800 font-bold pt-[12px] font-Poppins text-22 leading-[22px'>Explore</h2>
-              <p className='pt-[9px] text-center font-Poppins text-19 font-normal leading-[29px]'>Lorem ipsum dolor sit amet</p>
+          <div className='flex flex-col md:hidden h-full items-center '>
+            <div className='max-h-[25%]  h-full text-center py-[50px]'>
+              <img src='/assets/images/searchIcon2.png' alt='' className='mx-auto mt-[7px]' />
+              <h2 className='text-black-800 font-bold pt-[12px] font-Poppins text-13 leading-[18px]'>Explore</h2>
+              <p className='pt-[9px] max-w-[91px] text-center font-Poppins text-12 font-normal leading-[18px]'>Lorem ipsum dolor sit amet</p>
             </div>
-            <div className='max-w-[25%] w-full text-center'>
-              <img className='mx-auto'  src='/assets/images/propertyselectIcon.png' alt='' />
-              <h2 className='text-black-800 font-bold pt-[13px] font-Poppins text-22 leading-[22px'>Select a property</h2>
-              <p className='pt-[9px] text-center font-Poppins text-19 font-normal leading-[29px]'>Lorem ipsum dolor sit amet</p>
+            <div className='max-h-[25%] h-full text-center  py-[50px]'>
+              <img className='mx-auto'  src='/assets/images/propertySelectIcon2.png' alt='' />
+              <h2 className='text-black-800 font-bold pt-[13px] font-Poppins text-13 leading-[18px]'>Select a property</h2>
+              <p className='pt-[9px] max-w-[91px] text-center font-Poppins text-12 font-normal leading-[18px]'>Lorem ipsum dolor sit amet</p>
             </div>
-            <div className='max-w-[25%] w-full text-center'>
-              <img className='mx-auto'  src='/assets/images/siteIcon.svg' alt='' />
-              <h2 className='text-black-800 font-bold pt-[13px] font-Poppins text-22 leading-[22px'>Book a site</h2>
-              <p className='pt-[9px] text-center font-Poppins text-19 font-normal leading-[29px]'>Lorem ipsum dolor sit amet</p>
+            <div className='max-h-[25%] h-full text-center  py-[50px]'>
+              <img className='mx-auto'  src='/assets/images/siteIcon2.png' alt='' />
+              <h2 className='text-black-800 font-bold pt-[13px] font-Poppins text-13 leading-[18px]'>Book a site</h2>
+              <p className='pt-[9px] max-w-[91px] text-center font-Poppins text-12 font-normal leading-[18px]'>Lorem ipsum dolor sit amet</p>
             </div>
-            <div className='max-w-[25%] w-full text-center'>
-              <img className='mx-auto'  src='/assets/images/propertybook.png' alt='' />
-              <h2 className='text-black-800 font-bold pt-[13px] font-Poppins text-22 leading-[22px'>Book your property</h2>
-              <p className='pt-[9px] text-center font-Poppins text-19 font-normal leading-[29px]'>Lorem ipsum dolor sit amet</p>
+            <div className='max-h-[25%] h-full text-center  py-[50px]'>
+              <img className='mx-auto'  src='/assets/images/propertybook2.png' alt='' />
+              <h2 className='text-black-800 font-bold pt-[13px] font-Poppins text-13 leading-[18px]'>Book your property</h2>
+              <p className='pt-[9px] max-w-[91px] text-center font-Poppins text-12 font-normal leading-[18px]'>Lorem ipsum dolor sit amet</p>
             </div>
           </div>
         </div>

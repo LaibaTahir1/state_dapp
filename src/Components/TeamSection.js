@@ -1,11 +1,48 @@
 import React, { useState } from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+// import required modules
+import { Navigation } from 'swiper/modules';
+const TEAMSECTION=[
+  {
+    id:1,
+    img:'/assets/images/Man1.png',
+    heading:'Peter Parker',
+    text:'Land Seller',
+    icon:'/assets/images/SocialMedia.png',
+  },
+  {
+    id:2,
+    img:'/assets/images/Man2.png',
+    heading:'Elena Gilberts',
+    text:'Land Seller',
+    icon:'/assets/images/SocialMedia.png',
+  },
+  {
+    id:3,
+    img:'/assets/images/Man3.png',
+    heading:'Peter Parker',
+    text:'Land Seller',
+    icon:'/assets/images/SocialMedia.png',
+  },
+  {
+    id:4,
+    img:'/assets/images/Man4.png',
+    heading:'Peter Parker',
+    text:'Land Seller',
+    icon:'/assets/images/SocialMedia.png',
+  },
+]
 
 function TeamSection() {
 
   const [ isHover, setIsHover ] = useState(1)
 
   return (
-    <div className=" bg-grey-1500 pb-0 md:pb-[40px]  px-[16px] md:px-0  pt-[60px] md:pt-[100px]">
+    <div className=" bg-grey-1500 pb-0 md:pb-[40px]  px-[16px] md:px-0  pt-[60px] md:pt-[100px] ">
       <div className="flex justify-center">
         <div className=" border border-l-2  border-black-700   h-[25px]" />
         <p className="font-normal  leading-[28px] md:leaing-[38px] text-14 md:text-20 px-[10px] font-PlusJakartaSans">
@@ -18,78 +55,30 @@ function TeamSection() {
         Our Property Team
       </p>
       <div className="mt-[24px] md:mt-[144px] flex justify-center max-w-[1440px] mx-auto w-full">
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-[23px]">
-        <div onMouseEnter={()=>setIsHover(1)}
-        onMouseLeave={()=>setIsHover(null)}
-         className=" bg-grey-1300  hover:bg-blue-400 hover:text-white">
-            <img src="/assets/images/Man1.png" alt="" />
-            <div className="py-[23px] px-[21px]  rounded-b-[4px]">
-              <p className=" text-23 font-semibold font-PlusJakartaSans">
-                Elena Gilberts
-              </p>
-              <div className="flex justify-between">
-                <p className={`text-18 font-normal font-PlusJakartaSans ${isHover === 1 ? 'text-white':'text-blue-400'}`}>
-                  Land Seller
-                </p>
-                <div>
-                  {" "}
-                  <img src="/assets/images/SocialMedia.png" alt="" />
+      <Swiper navigation={false } slidesPerView={4}  spaceBetween={20}   modules={[Navigation]} className="mySwiper" >
+     
+      {TEAMSECTION.map((items ,index) =>{
+        return(
+          <SwiperSlide key={`${items.id}____${index}`}
+           onMouseEnter={()=>setIsHover(1)}
+          onMouseLeave={()=>setIsHover(null)}
+           className=" bg-grey-1300  hover:bg-blue-400 hover:text-white">
+              <img src={items.img} alt="" />
+              <div className="py-[23px] px-[21px]  rounded-b-[4px]">
+                <p className=" text-23 font-semibold font-PlusJakartaSans">{items.heading}</p>
+                <div className="flex justify-between">
+                  <p className={`text-18 font-normal font-PlusJakartaSans ${isHover === 1 ? 'text-white':'text-blue-400'}`}>{items.text} </p>
+                  <div>
+                    {" "}
+                    <img src={items.icon} alt="" />
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div className=" bg-grey-1300  hover:bg-blue-400 hover:text-white">
-            <img src="/assets/images/Man2.png" alt="" />
-            <div className="py-[23px] px-[21px]  rounded-b-[4px]">
-              <p className=" text-23 font-semibold font-PlusJakartaSans">
-                Elena Gilberts
-              </p>
-              <div className="flex justify-between">
-                <p className=" text-18 font-normal font-PlusJakartaSans ">
-                  Land Seller
-                </p>
-                <div>
-                  {" "}
-                  <img src="/assets/images/SocialMedia.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className=" bg-grey-1300  hover:bg-blue-400 hover:text-white">
-            <img src="/assets/images/Man3.png" alt="" />
-            <div className="py-[23px] px-[21px]  rounded-b-[4px]">
-              <p className=" text-23 font-semibold font-PlusJakartaSans">
-                Elena Gilberts
-              </p>
-              <div className="flex justify-between">
-                <p className=" text-18 font-normal font-PlusJakartaSans text-blue-400 ">
-                  Land Seller
-                </p>
-                <div>
-                  {" "}
-                  <img src="/assets/images/SocialMedia.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className=" bg-grey-1300  hover:bg-blue-400 hover:text-white">
-            <img src="/assets/images/Man4.png" alt="" />
-            <div className="py-[23px] px-[21px]  rounded-b-[4px]">
-              <p className=" text-23 font-semibold font-PlusJakartaSans">
-                Elena Gilberts
-              </p>
-              <div className="flex justify-between">
-                <p className=" text-18 font-normal font-PlusJakartaSans   text-blue-400 ">
-                  Land Seller
-                </p>
-                <div>
-                  {" "}
-                  <img src="/assets/images/SocialMedia.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+            </SwiperSlide>
+        );
+       })}
+  
+      </Swiper>
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ function StorySection() {
     style={{
         background:'url(/assets/images/blueBg.png)',
         backgroundRepeat:'no-repeat',
-        backgroundSize:'150%',
+        backgroundSize:'400%',
         backgroundPosition:'center',
         height:'800px',
     }} className='px-[16px] md:px-0 '>
@@ -19,7 +19,7 @@ function StorySection() {
        <div className='mt-[6px] md:mt-[40px]' > <img src='/assets/images/arrow.png' alt='' /></div>
        </div>
       </div>
-      <img className='my-[16px] md:my-[54px] mx-auto' src='/assets/images/building.png' alt='' />
+      <img className='my-[16px] md:my-[130px] mx-auto' src='/assets/images/building.png' alt='' />
        </div>
       
     </div>

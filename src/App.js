@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import HeroSection from './Components/HeroSection';
 import AboutSection from './Components/AboutSection';
 import Services from './Components/Services';
@@ -11,29 +12,21 @@ import LearnMore from './Components/LearnMore';
 import TeamSection from './Components/TeamSection';
 import BlogSection from './Components/BlogSection';
 import ContactUs from './Components/ContactUs';
+import BrowseProperties from './Components/BrowseProperties';
+import About from './Components/About';
+import { Route, Router, Routes } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
+import Home from './pages/Home';
+import BrowseProperty from './pages/BrowseProperty';
 
 function App() {
   return (
-    <div className='overflow-hidden'>
-      <Layout>
-        <HeroSection />
-        <div className='max-w-[1291px] mx-auto w-full'>
-          <AboutSection />
-          <Services />
-          <Property />
-        </div>
-        <StorySection />
-        <FindPlace />
-        <LearnMore />
-        <div className='max-w-[1291px] mx-auto w-full'>
-          <TeamSection />
-          <BlogSection />
-        </div>
-        <ContactUs />
-
-      </Layout>
-
-    </div>
+   <BrowserRouter>
+   <Routes>
+     <Route path='/Home' element={<Home />}></Route>
+     <Route path='/BrowseProperty' element={<BrowseProperty/>}></Route>
+   </Routes>
+   </BrowserRouter>
   );
 }
 
