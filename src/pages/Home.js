@@ -15,7 +15,11 @@ function Home() {
   return (
     <div className="overflow-hidden">
       <Layout >
+        <div className="-mt-[80px] relative z-0">
+          <button className="custom-prev-button ">Back</button>
         <HeroSection />
+        <button className="custom-next-button" >Next</button>
+        </div>
         <div className="max-w-[1291px] mx-auto w-full">
           <AboutSection />
           <Services />

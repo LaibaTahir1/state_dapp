@@ -6,13 +6,13 @@ import Layout from '../layout'
 function BrowseProperty() {
   return (
     <div>
-        <div className='overflow-hidden'>
-      <Layout>
-        <BrowseProperties/>
-        <About />
-      </Layout>
-    </div>
-      
+      <div className='overflow-hidden'>
+        <Layout>
+          <BrowseProperties />
+          <About />
+        </Layout>
+      </div>
+
     </div>
   )
 }
