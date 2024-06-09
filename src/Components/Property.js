@@ -8,7 +8,7 @@ function Property() {
     <div className='mt-[60px] md:mt-[100px] pb-[100px] max-w-[1440px] px-[16px]  md:px-0 mx-auto w-full'>
       <p className='font-Montserrat pl-0 md:pl-[72px] text-25 md:text-48 text-center md:text-start leading-[31px] md:leading-[58px] font-semibold'>PROPERTY SELECTION <spain className='text-blue-400'>PROCESS</spain></p>
       <div className='flex md:hidden justify-center mt-[7px]'> <div className='border-b-4 border w-[181px] border-blue-400 '></div></div>
-      <p className='mt-[20px] max-w-[365px] md:max-w-[882px] pl-0 md:pl-[72px] text-center md:text-start  text-black-200 text-15 md:text-24 font-normal leading-[22px] md:leading-[36px] font-Poppins'>Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore et.</p>
+      <p className='mt-[20px] max-w-[365px] md:max-w-[882px] pl-0 md:pl-[72px] mx-auto md:mx-0 text-center md:text-start  text-black-200 text-15 md:text-24 font-normal leading-[22px] md:leading-[36px] font-Poppins'>Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore et.</p>
       <div className=' hidden md:block'>
         <div className='mt-[50px]'
           style={{
@@ -68,12 +68,12 @@ function Property() {
               <p className='pt-[9px] max-w-[91px] text-center font-Poppins text-12 font-normal leading-[18px]'>Lorem ipsum dolor sit amet</p>
             </div>
             <div className='max-h-[25%] h-full text-center  py-[50px]'>
-              <img className='mx-auto'  src='/assets/images/siteIcon2.png' alt='' />
+              <img className='mx-auto'  src='/assets/images/siteIcon_2.png' alt='' />
               <h2 className='text-black-800 font-bold pt-[13px] font-Poppins text-13 leading-[18px]'>Book a site</h2>
               <p className='pt-[9px] max-w-[91px] text-center font-Poppins text-12 font-normal leading-[18px]'>Lorem ipsum dolor sit amet</p>
             </div>
             <div className='max-h-[25%] h-full text-center  py-[50px]'>
-              <img className='mx-auto'  src='/assets/images/propertybook2.png' alt='' />
+              <img className='mx-auto'  src='/assets/images/propertybook_2.png' alt='' />
               <h2 className='text-black-800 font-bold pt-[13px] font-Poppins text-13 leading-[18px]'>Book your property</h2>
               <p className='pt-[9px] max-w-[91px] text-center font-Poppins text-12 font-normal leading-[18px]'>Lorem ipsum dolor sit amet</p>
             </div>

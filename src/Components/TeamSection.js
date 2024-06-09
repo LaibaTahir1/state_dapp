@@ -39,7 +39,7 @@ const TEAMSECTION=[
 
 function TeamSection() {
 
-  const [ isHover, setIsHover ] = useState(1)
+  const [ isHover, setIsHover ] = useState()
 
   return (
     <div className=" bg-grey-1500 pb-0 md:pb-[40px]  px-[16px] md:px-0  pt-[60px] md:pt-[100px] ">
@@ -59,10 +59,30 @@ function TeamSection() {
      
       {TEAMSECTION.map((items ,index) =>{
         return(
-          <SwiperSlide key={`${items.id}____${index}`}
+         <div>
+           <div className="hidden md:flex">
+           <div  className=" bg-grey-1300  hover:bg-blue-400 hover:text-white  max-w-[306px] w-full mx-auto" key={`${items.id}____${index}`}
+           onMouseEnter={()=>setIsHover(1)}
+          onMouseLeave={()=>setIsHover(null)} > 
+          
+              <img src={items.img} alt="" />
+              <div className="py-[23px] px-[21px]  rounded-b-[4px]">
+                <p className=" text-23 font-semibold font-PlusJakartaSans">{items.heading}</p>
+                <div className="flex justify-between">
+                  <p className={`text-18 font-normal font-PlusJakartaSans ${isHover === 1 ? 'text-white':'text-blue-400'}`}>{items.text} </p>
+                  <div>
+                    {" "}
+                    <img src={items.icon} alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+           <div className="block md:hidden">
+           <SwiperSlide key={`${items.id}____${index}`}
            onMouseEnter={()=>setIsHover(1)}
           onMouseLeave={()=>setIsHover(null)}
-           className=" bg-grey-1300  hover:bg-blue-400 hover:text-white">
+           className=" bg-grey-1300  hover:bg-blue-400 hover:text-white block md:hidden">
               <img src={items.img} alt="" />
               <div className="py-[23px] px-[21px]  rounded-b-[4px]">
                 <p className=" text-23 font-semibold font-PlusJakartaSans">{items.heading}</p>
@@ -75,6 +95,8 @@ function TeamSection() {
                 </div>
               </div>
             </SwiperSlide>
+           </div>
+         </div>
         );
        })}
   

@@ -2,6 +2,7 @@ import React from 'react'
 import BrowseProperties from '../Components/BrowseProperties'
 import About from '../Components/About'
 import Layout from '../layout'
+import HouseProperty from '../Components/HouseProperty'
 
 function BrowseProperty() {
   return (
@@ -9,7 +10,10 @@ function BrowseProperty() {
       <div className='overflow-hidden'>
         <Layout>
           <BrowseProperties />
-          <About />
+         <div className=' bg-gray-1400'>
+         <About />
+         <HouseProperty/>
+         </div>
         </Layout>
       </div>
 

@@ -54,6 +54,7 @@ function HeroSection() {
         return (
           <SwiperSlide key={`${item.id}___${index}`}>
             <BackgroundSwipper heading={item.heading} paragraph={item.paragraph} />
+           
           </SwiperSlide>
         );
       })}

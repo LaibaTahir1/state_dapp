@@ -14,11 +14,19 @@ import ContactUs from "../Components/ContactUs";
 function Home() {
   return (
     <div className="overflow-hidden">
-      <Layout >
-        <div className="-mt-[80px] relative z-0">
-          <button className="custom-prev-button ">Back</button>
-        <HeroSection />
-        <button className="custom-next-button" >Next</button>
+      <Layout>
+        <div className="-mt-[80px]  relative z-0">
+          <div className="absolute mt-[350px] z-10  ">
+            <button className="custom-prev-button">
+            <img src="/assets/images/bgSliderPrev.png" alt="" />
+          </button>
+          </div>
+          <HeroSection />
+          <div className=" mt-[-360px] absolute z-10">
+            <button className="custom-next-button ">
+            <img className="flex items-end" src="/assets/images/bgSliderNext.png" alt="" />
+            </button>
+          </div>
         </div>
         <div className="max-w-[1291px] mx-auto w-full">
           <AboutSection />

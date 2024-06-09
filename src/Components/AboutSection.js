@@ -29,7 +29,7 @@ function AboutSection() {
                   <img  className='md:flex hidden w-full md:max-w-[385px] h-[530px]' src="/assets/images/home1.png" alt="" />
                   <img  className='md:hidden flex w-full  h-[320px]' src="/assets/images/home_1.png" alt="" />
                 </div>
-                <div className="flex justify-center lg:justify-start ">
+                <div className="flex md:justify-center lg:justify-start ">
                 <div className="border-blue-400 border-l-2 mt-[12px] md:mt-[20px] ml-[100px] md:ml-[43px] flex items-center ">
                   <div >
                     <p className="font-semibold pt-[7px]  text-14 md:text-25 leading-[16px] md:leading-[29px] pl-[27px]  text-blue-400 font-Montserrat">
@@ -44,7 +44,7 @@ function AboutSection() {
               </div>
               <div>
                 <div className="hidden md:flex gap-[27px]">
-                <div className="flex justify-center lg:justify-start ">
+                <div className="flex  md:justify-center lg:justify-start ">
                 <div className="border-blue-400 border-l-2 mt-[12px] md:mt-[20px] ml-[100px] md:ml-[43px] flex items-center ">
                   <div >
                     <p className="font-semibold pt-[7px]  text-14 md:text-25 leading-[16px] md:leading-[29px] pl-[27px]  text-blue-400 font-Montserrat">
@@ -61,7 +61,7 @@ function AboutSection() {
                   <img  className='md:flex hidden w-full md:max-w-[385px] h-[530px]' src="/assets/images/home2.png" alt="" />
                   <img  className='md:hidden flex w-full  h-[320px]' src="/assets/images/home_2.png" alt="" />
                 </div>
-                <div className="flex md:hidden justify-center lg:justify-start ">
+                <div className="flex md:hidden  md:justify-center lg:justify-start ">
                 <div className="border-blue-400 border-l-2 mt-[12px] md:mt-[20px] ml-[100px] md:ml-[43px] flex items-center ">
                   <div >
                     <p className="font-semibold pt-[7px]  text-14 md:text-25 leading-[16px] md:leading-[29px] pl-[27px]  text-blue-400 font-Montserrat">
@@ -79,7 +79,7 @@ function AboutSection() {
                   <img  className='md:flex hidden w-full md:max-w-[385px] h-[530px]' src="/assets/images/home3.png" alt="" />
                   <img  className='md:hidden flex w-full  h-[320px]' src="/assets/images/home_3.png" alt="" />
                 </div>
-                <div className="flex justify-center lg:justify-start ">
+                <div className="flex  md:justify-center lg:justify-start ">
                 <div className="border-blue-400 border-l-2 mt-[12px] md:mt-[20px] ml-[100px] md:ml-[43px] flex items-center ">
                   <div >
                     <p className="font-semibold pt-[7px]  text-14 md:text-25 leading-[16px] md:leading-[29px] pl-[27px]  text-blue-400 font-Montserrat">
