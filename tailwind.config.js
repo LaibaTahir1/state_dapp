@@ -53,6 +53,7 @@ module.exports = {
       400:'#004080',
       500:"#3E436D",
     },
+    transparent:'#faf7f708',
     purple: "#8c47f566",
     pink: "#DE91F2",
     white: "#ffffff",

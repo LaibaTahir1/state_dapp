@@ -1,22 +1,22 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 function Navbar() {
   const { pathname } = useLocation();
+  const navigate = useNavigate()
   const isHome = pathname === "/";
   const isProperty = pathname === "/BrowseProperty";
-  console.log(pathname, isHome, isProperty);
   return (
     <div
       className={` relative z-10 px-[25px] md:px-[73px]
-     ${
-       isHome
-         ? "text-white"
-         : "text-black-200" && isProperty
-         ? "bg-gray-1400"
-         : "bg-white"
-     }
+     ${isHome
+          ? "text-white"
+          : "text-black-200" && isProperty
+            ? "bg-gray-1400"
+            : "bg-white"
+        }
     `}
     >
       <div className="max-w-[1440px] mx-auto w-full">
@@ -39,17 +39,22 @@ function Navbar() {
             </Link>
             <div className="bg-current flex items-center">
               <select
-                className={`py-4 outline-none  bg-none ${
-                  isHome
-                    ? "   bg-cover "
-                    : "bg-white" && isProperty
+                onChange={(e) => {
+                  if (e.target.value === '/AboutUs') {
+                    navigate(e.target.value)
+                  }
+                }
+                }
+                className={`py-4 outline-none  bg-none ${isProperty
                     ? "bg-gray-1400"
-                    : "bg-white"
-                }`}
+                    : "bg-transparent"
+                  }`}
               >
-                <option>Pages</option>
-                <option>About us</option>
-                <option>Services</option>
+                <option value={'page'}>Pages</option>
+                <option value={'/AboutUs'}>
+                  About us
+                </option>
+                <option value={'services'}>Services</option>
                 <option>Procecss</option>
                 <option>Who we are</option>
                 <option>Our Team</option>
@@ -57,7 +62,6 @@ function Navbar() {
               </select>
             </div>
             <Link to={"/AboutUs"}>
-              {" "}
               <p className="py-4">Contact us</p>{" "}
             </Link>
             <div className=" hidden md:flex gap-1.5 py-4">

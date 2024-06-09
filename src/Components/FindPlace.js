@@ -77,8 +77,6 @@ const FINDPLACE = [
 
 function FindPlace() {
   const { md } = useResponsive()
-  console.log("🚀 ~ FindPlace ~ {md}:", md)
-
 
   return (
     <div className='max-w-[1440px] mx-auto w-full pb-[60px] md:pb-0 px-[16px]  md:px-0'>

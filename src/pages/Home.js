@@ -15,14 +15,14 @@ function Home() {
   return (
     <div className="overflow-hidden">
       <Layout>
-        <div className="-mt-[80px]  relative z-0">
-          <div className="absolute mt-[350px] z-10  ">
+        <div className="-mt-[80px] relative z-0">
+          <div className="absolute top-0 bottom-0 left-10 flex items-center justify-start z-10  ">
             <button className="custom-prev-button">
             <img src="/assets/images/bgSliderPrev.png" alt="" />
           </button>
           </div>
           <HeroSection />
-          <div className=" mt-[-360px] absolute z-10">
+          <div className="absolute top-0 bottom-0 right-10 flex items-center justify-end z-10">
             <button className="custom-next-button ">
             <img className="flex items-end" src="/assets/images/bgSliderNext.png" alt="" />
             </button>
